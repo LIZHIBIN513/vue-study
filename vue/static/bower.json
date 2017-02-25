@@ -1,0 +1,20 @@
+{
+  "name": "vue_dome",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "jingh <jingh1014@163.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/jinghaoo/Vue1.0-Model",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}

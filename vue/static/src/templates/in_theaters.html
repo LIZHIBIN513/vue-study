@@ -1,0 +1,15 @@
+<h1 class="page-header" >{{title}}</h1>
+<div class="list-group">
+  
+  <a href="{{'#!/subject/' + movie.id}}" class="list-group-item"  v-for="(index, movie) in movie_list.subjects">
+ 
+      <movie_list v-bind:movie="movie"></movie_list>
+ </a>
+</div>
+<p>总共：{{total}}条记录，第{{page}}/{{totalPage}}页</p>
+<nav>
+  <ul class="pager">
+    <li :class="{disabled: page === 1}"><a @click="go(page - 1)" href="javascript:;">上一页</a></li>
+    <li :class="{disabled: page === totalPage}"><a @click="go(page + 1)" href="javascript:;">下一页</a></li>
+  </ul>
+</nav>

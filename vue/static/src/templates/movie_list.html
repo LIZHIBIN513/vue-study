@@ -1,0 +1,15 @@
+<div class="media">
+  <div class="media-left">
+    <img :src="movie.images.small" alt="{{movie.alt}}">
+  </div>
+  <div class="media-body">
+    <h4 class="media-heading">{{movie.title}}</h4>
+    <p>类型：{{movie.genres.join('、')}}</p>
+    <p>导演：<span v-for="(index,director) in movie.directors">{{director.name}}{{index == movie.directors.length-1?'':'、'}}</span></p>
+    <p>主演：
+        <span v-for="(index,cast) in movie.casts">
+          {{cast.name}}{{index == movie.casts.length-1?'':'、'}}
+        </span>
+    </p>
+  </div>
+</div>
